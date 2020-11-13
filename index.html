@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Verkefni 9</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.27.1/date_fns.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="earthquakes-container">
+        <h1>Jarðskjálftar 4,5+ á richter seinustu 30 daga</h1>
+        <p class="loading">Hleð gögnum...</p>
+        <ul class="earthquakes"></ul>
+        <footer>
+          <a
+            href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+            >Gögn frá USGS</a
+          >
+        </footer>
+      </div>
+      <div class="map-container">
+        <div id="mapid" class="map"></div>
+      </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
